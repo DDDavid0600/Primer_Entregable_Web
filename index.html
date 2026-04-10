@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semillero de Investigación</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> <!--AOS animation-->
+    <link rel="stylesheet" href="./css/lightbox.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navegacion">
+    <!--spy para que el nav ilumine la seccion donde esta ||target lo linkea por el id-->
+    <header class="sticky-top"> <!--sticky-top: hace que se quede en pantalla-->
+        <a id="semilla" class="navbar-brand " href="#">
+            <i class="fa-solid fa-seedling"></i><!--icono de semilla-->
+            SEMILLERO INVESTIGACIÓN
+        </a>
+
+        <nav id="navegacion" class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                        <a class="nav-link" href="#eventos">Eventos</a>
+                        <a class="nav-link" href="#equipos">Equipos</a>
+                        <a class="nav-link" href="#resultados">Resultados</a>
+                        <a class="nav-link" href="#productos">Productos</a>
+                        <a class="nav-link" href="#galeria">Galeria</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="inicio">
+        <div id="contenedor-main">
+            <div id="texto-main" data-aos="fade-right">
+                <h1>Semillero de Investigación</h1> <!--encabezado de una seccion-->
+                <p>Innovación, Conocimiento y Transformación</p><!--parrafo-->
+                <p>Somos un grupo de investigadores apasionados por generar conocimiento y
+                    soluciones innovadoras para los desafíos del siglo XXI.</p><!--parrafo-->
+                <a type="button" href="#sobre" class="btn btn-outline-light btn-lg">
+                    CONÓCENOS</a><!--btn-lg boton large//grande-->
+                <a type="button" href="#contacto" class="btn btn-outline-light btn-lg"> CONTÁCTANOS</a>
+            </div>
+            <div id="imagen-main" data-aos="zoom-out-up"> <!--data-aos="fade-left"-->
+                <img src="./assets/imagenes/img_banner.png" class="img-fluid" alt="Banner Semillero">
+            </div>
+        </div>
+    </main>
+    <section id="sobre">
+        <div id="contenedor-sobre">
+            <div id="texto-sobre" data-aos="fade-right">
+                <h2>Sobre el Semillero</h2>
+                <p>Fundado en 2020, nuestro semillero se ha consolidado como referente
+                    en investigación aplicada.</p>
+            </div>
+            <div id="mision-vision-objetivos">
+                <div class="card" style="width: 20rem;" data-aos="zoom-out-down">
+                    <div class="card-body">
+                        <div class="card-title"> <i class="fa-solid fa-book-open"></i></div>
+                        <h3 class="card-subtitle">Misión</h3>
+                        <p class="card-text">Formar investigadores competentes que generen conocimiento innovador
+                            con impacto social.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem;" data-aos="zoom-out">
+                    <div class="card-body">
+                        <i class="fa-solid fa-eye"></i>
+                        <h3 class="card-title">Visión</h3>
+                        <p class="card-text">Ser reconocidos nacionalmente por nuestra excelencia en investigación y
+                            transferencia tecnológica.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem;" data-aos="zoom-out-up">
+                    <div class="card-body">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <h3 class="card-title">Objetivos</h3>
+                        <p class="card-text">Desarrollar proyectos de investigación competitiva y publicar en
+                            revistas indexadas.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="lineas-investigacion" data-aos="fade-down-right">
+                <h4> Lineas de Investigación</h4>
+                <p> <i class="fa-regular fa-square-check"></i> Inteligencia Artificial</p>
+                <p> <i class="fa-regular fa-square-check"></i> Internet de las Cosas</p>
+                <p> <i class="fa-regular fa-square-check"></i> Ciberseguridad</p>
+                <p> <i class="fa-regular fa-square-check"></i> Big Data</p>
+            </div>
+            <div id="resena-sobre">
+
+            </div>
+        </div>
+    </section>
+    <section id="eventos">
+        <div id="contenedor-eventos">
+            <div id="texto-eventos" data-aos="fade-right">
+                <h2>Próximos Eventos</h2>
+                <p>Participa en nuestras actividades académicas y culturales</p>
+            </div>
+            <div id="cards-eventos">
+                <div class="card" data-aos="zoom-in">
+                    <img src="./assets/imagenes/img_e1.png" class="card-img-top" alt="imagen evento1">
+                    <div class="card-body">
+                        <h5 class="card-title">Seminario IA Aplicada</h5>
+                        <div>
+                            <i class="fa-solid fa-calendar"></i> 15 Jun 2026
+                            <i class="fa-solid fa-map-pin"></i> Auditorio Principal
+                        </div>
+                        <p class="card-text">Exploraremos las aplicaciones prácticas de la inteligencia artificial
+                            en diversos sectores.</p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <img src="./assets/imagenes/img_e2.png" class="card-img-top" alt="imagen evento2">
+                    <div class="card-body">
+                        <h5 class="card-title">Workshop Big Data</h5>
+                        <div>
+                            <i class="fa-solid fa-calendar"></i> 15 Abr 2026
+                            <i class="fa-solid fa-map-pin"></i> Sala Chairá
+                        </div>
+                        <p class="card-text">Aprende a trabajar con grandes volúmenes de datos utilizando
+                            herramientas modernas.</p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <img src="./assets/imagenes/img_e3.png" class="card-img-top" alt="imagen evento3">
+                    <div class="card-body">
+                        <h5 class="card-title">Conferencia Ciberseguridad</h5>
+                        <div>
+                            <i class="fa-solid fa-calendar"></i> 31 May 2026
+                            <i class="fa-solid fa-map-pin"></i> Virtual
+                        </div>
+                        <p class="card-text">Las últimas tendencias y amenazas en el mundo de la ciberseguridad.</p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="equipos">
+        <div id="contenedor-equipos">
+            <div id="texto-equipos" data-aos="fade-right">
+                <h2>Nuestros Equipos</h2>
+                <p>Equipos multidisciplinarios trabajando en proyectos innovadores</p>
+            </div>
+            <div id="cards-equipos">
+                <div class="card mb-3" data-aos="zoom-in">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./assets/imagenes/img_t1.png" class="img-fluid rounded-start w-100"
+                                alt="Equipo IA Aplicada">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fa-solid fa-brain me-2"></i>
+                                    Equipo IA Aplicada
+                                </h5>
+                                <p class="card-text">Desarrollo de algoritmos de inteligencia artificial para
+                                    aplicaciones en salud, educación y medio ambiente.</p>
+                                <h6 class="fw-bold mt-3 mb-2">Integrantes:</h6>
+                                <!--fw-bold: negrita, mt: margin top, mb: margin bottom-->
+                                <ul class="list-unstyled small">
+                                    <li><i class="fa-solid fa-circle-user me-2"></i></i>María González - Líder
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-user me-2"></i></i>Juan Pérez -
+                                        Investigador</li>
+                                    <li><i class="fa-solid fa-circle-user me-2"></i></i>Ana López -
+                                        Desarrolladora</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" data-aos="zoom-in">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./assets/imagenes/img_t2.png" class="img-fluid rounded-start" alt="imagen team1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: darkgreen">
+                                    <i class="fa-solid fa-network-wired me-2" style="color: darkgreen"></i>
+                                    Equipo IoT
+                                </h5>
+                                <p class="card-text">Internet de las Cosas aplicado a ciudades inteligentes y
+                                    agricultura de precisión.</p>
+                                <h6 class="fw-bold mt-3 mb-2">Integrantes:</h6>
+                                <!--fw-bold: negrita, mt: margin top, mb: margin bottom-->
+                                <ul class="list-unstyled small">
+                                    <li><i class="fa-solid fa-circle-user me-2" style="color: darkgreen"></i></i>Carlos
+                                        Ramírez - Líder
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-user me-2" style="color: darkgreen"></i></i>Laura
+                                        Martínez -
+                                        Ingeniera</li>
+                                    <li><i class="fa-solid fa-circle-user me-2" style="color: darkgreen"></i></i>Pedro
+                                        Sánchez - Técnico</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resultados">
+        <div id="contenedor-resultados">
+            <div id="texto-resultados" data-aos="fade-right">
+                <h2>Resultados de Investigación</h2>
+                <p>Proyectos con impacto real</p>
+            </div>
+            <div id="cards-resultados" data-aos="zoom-in">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-robot fa-4x"></i>
+                        <h5 class="card-title">Sistema Predictivo IA</h5>
+                        <p class="card-text">Algoritmo de machine learning que predice fallos en equipos
+                            industriales con 95% de precisión.</p>
+                        <div>
+                            <span class="badge bg-info">En Producción</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-cloud fa-4x" style="color:aqua"></i>
+                        <h5 class="card-title">Plataforma IoT</h5>
+                        <p class="card-text">Sistema de monitoreo en tiempo real para 500 dispositivos conectados
+                            simultáneamente.</p>
+                        <div>
+                            <span class="badge bg-success">Implementado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-shield-halved fa-4x"></i>
+                        <h5 class="card-title">Framework Seguridad</h5>
+                        <p class="card-text">Herramientas de ciberseguridad que protegen contra 98% de las amenazas
+                            conocidas.</p>
+                        <div>
+                            <span class="badge bg-info">En Producción</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="productos">
+        <div id="contenedor-productos">
+            <div id="texto-productos" data-aos="fade-right">
+                <h2>Productos Académicos</h2>
+                <p>Libros, artículos e informes disponibles</p>
+            </div>
+            <div id="columnas-productos">
+                <div id="columna-libros" data-aos="fade-up">
+                    <h3><i class="fa-solid fa-book me-2 text-warning"></i>Libros(5)</h3>
+                    <!--me(margin-right) es de bootstrap, -2(8px) es el valor. también existe ms(margin-left)-->
+                    <div class="list-group">
+                        <button class="list-group-item list-group-item-action btn-libro" data-bs-toggle="modal"
+                            data-bs-target="#modalLibro1">
+                            Metodología de Investigación Científica
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-libro" data-bs-toggle="modal"
+                            data-bs-target="#modalLibro2">
+                            Estadística Aplicada a la Investigación
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-libro" data-bs-toggle="modal"
+                            data-bs-target="#modalLibro3">
+                            Pedagogía Digital Moderna
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-libro" data-bs-toggle="modal"
+                            data-bs-target="#modalLibro4">
+                            Diseño de Experimentos
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-libro" data-bs-toggle="modal"
+                            data-bs-target="#modalLibro5">
+                            Análisis de Datos Cuantitativos
+                        </button>
+                    </div>
+                </div>
+                <div id="columna-articulos" data-aos="fade-up">
+                    <h3><i class="fa-solid fa-file-lines me-2 text-success"></i>Artículos(8)</h3>
+                    <!--text-success(boostrap) color, en este caso cian.-->
+                    <div class="list-group">
+                        <button class="list-group-item list-group-item-action btn-articulo" data-bs-toggle="modal"
+                            data-bs-target="#modalArticulo1">
+                            Inteligencia Artificial en Educación
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-articulo" data-bs-toggle="modal"
+                            data-bs-target="#modalArticulo2">
+                            Blockchain y Educación Digital
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-articulo" data-bs-toggle="modal"
+                            data-bs-target="#modalArticulo3">
+                            Realidad Aumentada Educativa
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-articulo" data-bs-toggle="modal"
+                            data-bs-target="#modalArticulo4">
+                            Gamificación en el Aprendizaje
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-articulo" data-bs-toggle="modal"
+                            data-bs-target="#modalArticulo5">
+                            Big Data en Investigación Educativa
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-articulo" data-bs-toggle="modal"
+                            data-bs-target="#modalArticulo6">
+                            Machine Learning Predictivo
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-articulo" data-bs-toggle="modal"
+                            data-bs-target="#modalArticulo7">
+                            Ciberseguridad Educativa
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-articulo" data-bs-toggle="modal"
+                            data-bs-target="#modalArticulo8">
+                            Metaverso y Educación
+                        </button>
+                    </div>
+                </div>
+                <div id="columna-informes" data-aos="fade-up">
+                    <h3><i class="fa-solid fa-newspaper me-2 text-info"></i>Informes(4)</h3>
+                    <div class="list-group">
+                        <button class="list-group-item list-group-item-action btn-informe" data-bs-toggle="modal"
+                            data-bs-target="#modalInforme1">
+                            Tendencias Educativas 2025
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-informe" data-bs-toggle="modal"
+                            data-bs-target="#modalInforme2">
+                            IA en Evaluación Académica
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-informe" data-bs-toggle="modal"
+                            data-bs-target="#modalInforme3">
+                            Impacto COVID-19 Educación
+                        </button>
+                        <button class="list-group-item list-group-item-action btn-informe" data-bs-toggle="modal"
+                            data-bs-target="#modalInforme4">
+                            Educación Híbrida 2025
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-libro" id="modalLibro1" tabindex="-1">
+            <!--tabindex -1 es para eliminarlo del orden de tabulacion del teclado-->
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5><strong>Metodología de Investigación</strong></h5>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Autor:</strong> Dr. Juan Pérez</p>
+                        <p><strong>Año:</strong> 2023</p>
+                        <a href="assets/PREParcial_1_Web_G1.pdf" class="btn btn-warning w-100" download><i
+                                class="fa-solid fa-download me-2"></i>Descargar PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="galeria">
+        <div id="contenedor-galeria">
+            <div id="texto-galeria" data-aos="fade-right">
+                <h2>Galería de Imágenes</h2>
+                <p>Momentos especiales de nuestro semillero</p>
+            </div>
+            <div id="album-galeria">
+                <div class="row g-4"> <!--g-4 es una funcionalidad de bootstrap para grap(espaciado)-->
+                    <a href="assets/imagenes/img_g1.png" data-lightbox="mis-fotos" data-aos="flip-left">
+                        <!--data-lightbox Activa el lightbox, el data-gallery Agrupa las imágenes para navegar entre ellas, se debe usar el mismo nombre en ambos-->
+                        <img src="assets/imagenes/img_g1.png" class="img-fluid rounded">
+                    </a>
+                    <a href="assets/imagenes/img_g2.png" data-lightbox="mis-fotos" data-aos="flip-right">
+                        <img src="assets/imagenes/img_g2.png" class="img-fluid rounded">
+                    </a>
+                    <a href="assets/imagenes/img_g3.png" data-lightbox="mis-fotos" data-aos="flip-left">
+                        <img src="assets/imagenes/img_g3.png" class="img-fluid rounded">
+                    </a>
+                    <a href="assets/imagenes/img_g4.png" data-lightbox="mis-fotos" data-aos="flip-right">
+                        <!-- col-sm-4 es un responsive(boostrap grid)-->
+                        <img src="assets/imagenes/img_g4.png" class="img-fluid rounded">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto">
+        <div id="contenedor-contacto">
+            <div id="texto-contacto" data-aos="fade-up">
+                <h2>Contáctanos</h2>
+                <p>¿Te interesa colaborar con nosotros? !Escríbenos!</p>
+            </div>
+            <div id="organizar-contacto">
+                <div id="formulario-contacto" data-aos="fade-right">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombres y Apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingrese su Correo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                            <i class="fa-solid fa-paper-plane me-2"></i>Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+                <div id="informacion-contacto" data-aos="fade-right"> <!--data-aos="fade-left"-->
+                    <h3><strong>Información de Contacto</strong></h3>
+                    <div>
+                        <i class="fa-solid fa-envelope fa-2x"></i> <!--fa-2x tamaño x2-->
+                        <h6>Correo Institucional</h6>
+                        <p>semillero.investigacion@uni.edu.co</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-location-dot fa-2x"></i>
+                        <h6>Ubicación</h6>
+                        <p class="mb-0">Universidad Nacional</p>
+                        <p>Cra 45 #26-25, Florencia</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone fa-2x"></i>
+                        <h6>Teléfono</h6>
+                        <p>+57 313 222 3344</p>
+                    </div>
+                    <div>
+                        <h6><strong>redes-sociales</strong></h6>
+                        <div id="links-redes">
+                            <a href="" class="m-3"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                            <a href="" class="m-3"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                            <a href="" class="m-3"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                            <a href="" class="m-3"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="contenedor-footer">
+            <div>
+                <p class="mb-0">© 2024 Semillero Investigación. Todos los derechos reservados.</p>
+            </div>
+            <div>
+                <a href="#inicio" class="me-3">Inicio</a>
+                <a href="#sobre" class="me-3">Sobre</a>
+                <a href="#productos" class="me-3">Productos</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        lightbox.option({
+            'disableScrolling': true,
+            'showImageNumberLabel': false,
+            'wrapAround': true,
+        })
+    </script>
+    <!--disableScrolling: true, desactiva el despalzamiento de la página cuando el lightbox está abierto-->
+    <!--showImageNumberLabel: false, desactiva el texto que aparece abajo de las imagenes "1 de 4"-->
+    <!--wrapAround: true, permite pasar de la última imágen a la primera-->
+</body>
+
+</html>
